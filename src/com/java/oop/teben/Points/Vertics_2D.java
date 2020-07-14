@@ -1,7 +1,7 @@
-package com.java.oop.teben.Point;
+package com.java.oop.teben.Points;
 
 
-public class Vertics_2D extends Vertics {
+public class Vertics_2D extends Vertic {
     private double y;
 
     public Vertics_2D(double x, double y) {

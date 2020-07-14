@@ -1,4 +1,4 @@
-package com.java.oop.teben.Point;
+package com.java.oop.teben.Points;
 
 public class Vertic {
     private double x;

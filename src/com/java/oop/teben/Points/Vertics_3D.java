@@ -1,4 +1,4 @@
-package com.java.oop.teben.Point;
+package com.java.oop.teben.Points;
 
 public class Vertics_3D extends Vertics_2D {
     private double z;
