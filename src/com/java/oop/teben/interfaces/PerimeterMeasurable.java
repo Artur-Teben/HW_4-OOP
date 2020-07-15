@@ -1,5 +1,5 @@
-package com.java.oop.teben.Interfaces;
+package com.java.oop.teben.interfaces;
 
 public interface PerimeterMeasurable {
-    double getPerimeter();
+    float getPerimeter();
 }

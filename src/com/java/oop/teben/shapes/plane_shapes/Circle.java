@@ -4,30 +4,37 @@ import com.java.oop.teben.points.Vertices2D;
 
 import java.util.List;
 
-public class Circle extends PlaneShape{
-    private final double radius;
+public class Circle extends PlaneShapes {
+    private final float radiusOfCircle;
 
-    public Circle(Vertices2D vertex, String nameOfShape, double radius) {
-        super(List.of(vertex), "Circle");
-        this.radius = radius;
+    public Circle(Vertices2D center, String nameOfShape, float radiusOfCircle) {
+        super(List.of(center), "Circle");
+        this.radiusOfCircle = radiusOfCircle;
     }
 
-    @Override
-    public double getArea() {
-        return Math.PI * Math.pow(radius, 2);
+    public float getRadiusOfCircle() {
+        return radiusOfCircle;
     }
 
+    // S = Pi * R ^ 2
     @Override
-    public double getPerimeter() {
-        return 2 * Math.PI * radius;
+    public float getArea() {
+        return (float) (Math.PI * Math.pow(radiusOfCircle, 2));
+    }
+
+    // P = 2 * Pi * R
+    @Override
+    public float getPerimeter() {
+        return 2 * (float) Math.PI * radiusOfCircle;
     }
 
     @Override
     public String toString() {
-        return "Circle{" +
-                "Radius = " + radius +
-                ", Area = " + this.getArea() +
-                ", Length = " + this.getPerimeter() +
-                '}';
+        return "Circle: \n\t\t[\t" +
+                "Center of circle: " + super.getVertex() +
+                ", \n\t\t\tRadius = " + this.getRadiusOfCircle() +
+                ", \n\t\t\tArea = " + this.getArea() +
+                ", \n\t\t\tLength = " + this.getPerimeter() +
+                " \t]";
     }
 }

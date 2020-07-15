@@ -1,20 +1,13 @@
 package com.java.oop.teben.points;
 
-public class Vertices {
-    private double x;
+public abstract class Vertex {
+    private final float x;
 
-    public Vertices(double x) {
+    public Vertex(float x) {
         this.x = x;
     }
 
-    public double getX() {
+    public float getX() {
         return x;
-    }
-
-    @Override
-    public String toString() {
-        return "Vertic{" +
-                "x=" + x +
-                '}';
     }
 }
