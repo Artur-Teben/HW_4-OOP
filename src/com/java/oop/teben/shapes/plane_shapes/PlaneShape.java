@@ -1,13 +1,14 @@
-package com.java.oop.teben.Shapes.PlaneShapes;
+package com.java.oop.teben.shapes.plane_shapes;
 
-import com.java.oop.teben.Interfaces.AreaMeasurable;
-import com.java.oop.teben.Interfaces.PerimeterMeasurable;
-import com.java.oop.teben.Points.Vertices_2D;
-import com.java.oop.teben.Shapes.Shape;
+import com.java.oop.teben.interfaces.AreaMeasurable;
+import com.java.oop.teben.interfaces.PerimeterMeasurable;
+import com.java.oop.teben.points.Vertices2D;
+import com.java.oop.teben.shapes.Shape;
 
-import java.util.ArrayList;
 import java.util.List;
 
 public abstract class PlaneShape extends Shape implements PerimeterMeasurable, AreaMeasurable {
-    private List<Vertices_2D> listOfVertics2D = new ArrayList<>();
+    public PlaneShape(List vertices, String nameOfShape) {
+        super(vertices, nameOfShape);
+    }
 }
