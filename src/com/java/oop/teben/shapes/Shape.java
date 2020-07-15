@@ -1,28 +1,21 @@
-package com.java.oop.teben.Shapes;
-
-import com.java.oop.teben.Points.Vertices_2D;
+package com.java.oop.teben.shapes;
 
 import java.util.List;
 
 public abstract class Shape {
-    private List<Vertices_2D> listOfVertics;
+    protected List vertices;
+    private final String nameOfShape;
 
-    public Shape(List<Vertices> listOfVertics) {
-        this.listOfVertics = listOfVertics;
-    }
-
-    public List<Vertices> getListOfVertics() {
-        return listOfVertics;
-    }
-
-    public void setListOfVertics(List<Vertices> listOfVertics) {
-        this.listOfVertics = listOfVertics;
+    public Shape(List vertices, String nameOfShape) {
+        this.vertices = vertices;
+        this.nameOfShape = nameOfShape;
     }
 
     @Override
     public String toString() {
         return "Shape{" +
-                "listOfVertics=" + listOfVertics +
+                "nameOfShape=" + nameOfShape +
+                ", vertices='" + vertices + '\'' +
                 '}';
     }
 }
