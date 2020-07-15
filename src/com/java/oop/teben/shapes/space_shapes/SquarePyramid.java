@@ -1,4 +1,4 @@
 package com.java.oop.teben.Shapes.SpaceShapes;
 
-public class Cuboid {
+public class SquarePyramid extends SpaceShapes{
 }

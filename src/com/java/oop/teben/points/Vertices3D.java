@@ -1,9 +1,9 @@
-package com.java.oop.teben.Points;
+package com.java.oop.teben.points;
 
-public class Vertics_3D extends Vertics_2D {
+public class Vertices_3D extends Vertices_2D {
     private double z;
 
-    public Vertics_3D(double x, double y, double z) {
+    public Vertices_3D(double x, double y, double z) {
         super(x, y);
         this.z = z;
     }
@@ -13,7 +13,7 @@ public class Vertics_3D extends Vertics_2D {
     }
 
     // AB = ((xB - xA)^2 + (yB - yA)^2 + (zB - zA)^2)^(1/2)
-    public double getDistance(Vertics_3D pointB) {
+    public double getDistance(Vertices_3D pointB) {
         return Math.sqrt(Math.pow((this.getX() - pointB.getX()), 2) +
                 Math.pow((this.getY() - pointB.getY()), 2) +
                 Math.pow((this.getZ() - pointB.getZ()), 2));

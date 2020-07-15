@@ -1,9 +1,9 @@
-package com.java.oop.teben.Points;
+package com.java.oop.teben.points;
 
-public class Vertic {
+public class Vertices {
     private double x;
 
-    public Vertic(double x) {
+    public Vertices(double x) {
         this.x = x;
     }
 
