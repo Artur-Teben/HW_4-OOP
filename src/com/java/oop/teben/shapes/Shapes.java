@@ -10,4 +10,8 @@ public abstract class Shapes {
         this.listOfVertices = listOfVertices;
         this.nameOfShape = nameOfShape;
     }
+
+    public String getNameOfShape() {
+        return nameOfShape;
+    }
 }

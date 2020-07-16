@@ -14,7 +14,7 @@ public class Cuboid extends SpaceShapes {
                   float widthOfCuboid,
                   float heightOfCuboid,
                   float depthOfCuboid) {
-        super(List.of(vertex), "Cuboid");
+        super(List.of(vertex), nameOfShape);
         this.widthOfCuboid = widthOfCuboid;
         this.heightOfCuboid = heightOfCuboid;
         this.depthOfCuboid = depthOfCuboid;
@@ -48,7 +48,8 @@ public class Cuboid extends SpaceShapes {
 
     @Override
     public String toString() {
-        return "Cuboid: \n\t\t[\t" +
+        return super.getNameOfShape() +
+                ": \n\t\t[\t" +
                 "Width = " + this.getWidthOfCuboid() +
                 ", \n\t\t\tHeight = " + this.getHeightOfCuboid() +
                 ", \n\t\t\tDepth = " + this.getDepthOfCuboid() +

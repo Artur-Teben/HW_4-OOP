@@ -9,7 +9,7 @@ public class Rectangle extends PlaneShapes {
     private final float height;
 
     public Rectangle(Vertices2D vertex, String nameOfShape, float width, float height) {
-        super(List.of(vertex), "Rectangle");
+        super(List.of(vertex), nameOfShape);
         this.width = width;
         this.height = height;
     }
@@ -36,7 +36,8 @@ public class Rectangle extends PlaneShapes {
 
     @Override
     public String toString() {
-        return "Rectangle: \n\t\t[\t" +
+        return super.getNameOfShape() +
+                ": \n\t\t[\t" +
                 "Width = " + this.getWidth() +
                 ", \n\t\t\tHeight = " + this.getHeight() +
                 ", \n\t\t\tArea = " + this.getArea() +

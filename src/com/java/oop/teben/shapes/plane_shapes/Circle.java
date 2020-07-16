@@ -8,7 +8,7 @@ public class Circle extends PlaneShapes {
     private final float radiusOfCircle;
 
     public Circle(Vertices2D center, String nameOfShape, float radiusOfCircle) {
-        super(List.of(center), "Circle");
+        super(List.of(center), nameOfShape);
         this.radiusOfCircle = radiusOfCircle;
     }
 
@@ -30,7 +30,8 @@ public class Circle extends PlaneShapes {
 
     @Override
     public String toString() {
-        return "Circle: \n\t\t[\t" +
+        return super.getNameOfShape() +
+                ": \n\t\t[\t" +
                 "Center of circle: " + super.getVertex() +
                 ", \n\t\t\tRadius = " + this.getRadiusOfCircle() +
                 ", \n\t\t\tArea = " + this.getArea() +

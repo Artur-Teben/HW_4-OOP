@@ -20,7 +20,7 @@ public class Execute {
         Triangle triangle = new Triangle(
                 new Vertices2D(0, 1),
                 new Vertices2D(3, 5),
-                new Vertices2D(6, 2));
+                new Vertices2D(6, 2), "Triangle");
         Cuboid cuboid = new Cuboid(new Vertices3D(0, 0, 0), "Cuboid", 3, 8, 6);
         Sphere sphere = new Sphere(new Vertices3D(10, 10, 10), "Sphere", 8);
         SquarePyramid pyramid = new SquarePyramid(

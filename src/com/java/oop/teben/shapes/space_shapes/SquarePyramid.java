@@ -9,7 +9,7 @@ public class SquarePyramid extends SpaceShapes{
     private final float heightOfSquarePyramid;
 
     public SquarePyramid(Vertices3D vertex, String nameOfShape, float width, float height) {
-        super(List.of(vertex), "SquarePyramid");
+        super(List.of(vertex), nameOfShape);
         this.widthOfSquarePyramid = width;
         this.heightOfSquarePyramid = height;
     }
@@ -40,7 +40,7 @@ public class SquarePyramid extends SpaceShapes{
 
     @Override
     public String toString() {
-        return "Square Pyramid: \n\t\t[\t" +
+        return super.getNameOfShape() + ": \n\t\t[\t" +
                 "Width = " + this.getWidthOfSquarePyramid() +
                 ", \n\t\t\tHeight = " + this.getHeightOfSquarePyramid() +
                 ", \n\t\t\tArea = " + this.getArea() +

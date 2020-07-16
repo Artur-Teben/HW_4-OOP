@@ -8,7 +8,7 @@ public class Sphere extends SpaceShapes {
     private final float radiusOfSphere;
 
     public Sphere(Vertices3D center, String nameOfShape, float radiusOfSphere) {
-        super(List.of(center), "Sphere");
+        super(List.of(center), nameOfShape);
         this.radiusOfSphere = radiusOfSphere;
     }
 
@@ -30,7 +30,8 @@ public class Sphere extends SpaceShapes {
 
     @Override
     public String toString() {
-        return "Sphere: \n\t\t[\t" +
+        return super.getNameOfShape() +
+                ": \n\t\t[\t" +
                 "Center of sphere: " + super.getVertex() +
                 ", \n\t\t\tRadius = " + this.getRadiusOfSphere() +
                 ", \n\t\t\tArea = " + this.getArea() +

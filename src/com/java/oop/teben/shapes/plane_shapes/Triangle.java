@@ -9,8 +9,8 @@ public class Triangle extends PlaneShapes {
     private final float b;
     private final float c;
 
-    public Triangle(Vertices2D A, Vertices2D B, Vertices2D C) {
-        super(List.of(A, B, C), "Triangle");
+    public Triangle(Vertices2D A, Vertices2D B, Vertices2D C, String nameOfShape) {
+        super(List.of(A, B, C), nameOfShape);
         this.a = getDistance(B, C);
         this.b = getDistance(A, C);
         this.c = getDistance(A, B);
@@ -30,7 +30,8 @@ public class Triangle extends PlaneShapes {
 
     @Override
     public String toString() {
-        return "Triangle: \n\t\t[\t" +
+        return super.getNameOfShape() +
+                ": \n\t\t[\t" +
                 "Coordinates: A, B, C: " + super.getVertex() +
                 "\b\b,\n\t\t\ta = BC = " + a +
                 ",\n\t\t\tb = AC = " + b +
