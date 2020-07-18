@@ -7,7 +7,7 @@ import com.java.oop.teben.shapes.Shapes;
 
 import java.util.List;
 
-public abstract class PlaneShapes extends Shapes implements PerimeterMeasurable, AreaMeasurable {
+public abstract class PlaneShapes extends Shapes<Vertices2D> implements PerimeterMeasurable, AreaMeasurable {
     public PlaneShapes(List<Vertices2D> listOfVertices, String nameOfShape) {
         super(listOfVertices, nameOfShape);
     }

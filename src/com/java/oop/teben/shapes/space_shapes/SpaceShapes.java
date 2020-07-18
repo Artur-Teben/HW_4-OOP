@@ -7,7 +7,7 @@ import com.java.oop.teben.shapes.Shapes;
 
 import java.util.List;
 
-public abstract class SpaceShapes extends Shapes implements AreaMeasurable, VolumeMeasurable {
+public abstract class SpaceShapes extends Shapes<Vertices3D> implements AreaMeasurable, VolumeMeasurable {
     public SpaceShapes(List<Vertices3D> listOfVertices, String nameOfShape) {
         super(listOfVertices, nameOfShape);
     }
