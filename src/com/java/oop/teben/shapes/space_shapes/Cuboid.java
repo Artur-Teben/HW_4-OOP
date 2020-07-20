@@ -4,7 +4,7 @@ import com.java.oop.teben.points.Vertices3D;
 
 import java.util.List;
 
-public class Cuboid extends SpaceShapes {
+public class Cuboid extends SpaceShape {
     private final float widthOfCuboid;
     private final float heightOfCuboid;
     private final float depthOfCuboid;

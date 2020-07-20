@@ -4,7 +4,7 @@ import com.java.oop.teben.points.Vertices3D;
 
 import java.util.List;
 
-public class SquarePyramid extends SpaceShapes{
+public class SquarePyramid extends SpaceShape {
     private final float widthOfSquarePyramid;
     private final float heightOfSquarePyramid;
 

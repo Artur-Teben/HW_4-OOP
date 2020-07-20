@@ -4,7 +4,7 @@ import com.java.oop.teben.points.Vertices3D;
 
 import java.util.List;
 
-public class Sphere extends SpaceShapes {
+public class Sphere extends SpaceShape {
     private final float radiusOfSphere;
 
     public Sphere(Vertices3D center, String nameOfShape, float radiusOfSphere) {
