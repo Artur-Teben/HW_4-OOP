@@ -2,11 +2,11 @@ package com.java.oop.teben.shapes;
 
 import java.util.List;
 
-public abstract class Shapes<T> {
-    protected List<T> listOfVertices;
+public abstract class Shapes<Vertex> {
+    protected final List<Vertex> listOfVertices;
     private final String nameOfShape;
 
-    public Shapes(List<T> listOfVertices, String nameOfShape) {
+    public Shapes(List<Vertex> listOfVertices, String nameOfShape) {
         this.listOfVertices = listOfVertices;
         this.nameOfShape = nameOfShape;
     }

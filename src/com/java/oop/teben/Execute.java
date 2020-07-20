@@ -2,7 +2,7 @@ package com.java.oop.teben;
 
 import com.java.oop.teben.points.Vertices2D;
 import com.java.oop.teben.points.Vertices3D;
-import com.java.oop.teben.shapes.Shapes;
+import com.java.oop.teben.shapes.Shape;
 import com.java.oop.teben.shapes.plane_shapes.Circle;
 import com.java.oop.teben.shapes.plane_shapes.Rectangle;
 import com.java.oop.teben.shapes.plane_shapes.Triangle;
@@ -26,7 +26,7 @@ public class Execute {
         SquarePyramid pyramid = new SquarePyramid(
                 new Vertices3D(10, 10, 0), "Square Pyramid", 3, 10);
 
-        List<Shapes> shapes = new ArrayList<>();
+        List<Shape> shapes = new ArrayList<>();
         shapes.add(circle);
         shapes.add(rectangle);
         shapes.add(triangle);
@@ -34,7 +34,7 @@ public class Execute {
         shapes.add(sphere);
         shapes.add(pyramid);
 
-        for (Shapes list : shapes) {
+        for (Shape list : shapes) {
             System.out.println(list);
         }
     }
