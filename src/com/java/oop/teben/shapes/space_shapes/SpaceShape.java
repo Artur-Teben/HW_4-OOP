@@ -3,12 +3,12 @@ package com.java.oop.teben.shapes.space_shapes;
 import com.java.oop.teben.interfaces.AreaMeasurable;
 import com.java.oop.teben.interfaces.VolumeMeasurable;
 import com.java.oop.teben.points.Vertices3D;
-import com.java.oop.teben.shapes.Shapes;
+import com.java.oop.teben.shapes.Shape;
 
 import java.util.List;
 
-public abstract class SpaceShapes extends Shapes<Vertices3D> implements AreaMeasurable, VolumeMeasurable {
-    public SpaceShapes(List<Vertices3D> listOfVertices, String nameOfShape) {
+public abstract class SpaceShape extends Shape<Vertices3D> implements AreaMeasurable, VolumeMeasurable {
+    public SpaceShape(List<Vertices3D> listOfVertices, String nameOfShape) {
         super(listOfVertices, nameOfShape);
     }
 
@@ -30,10 +30,10 @@ public abstract class SpaceShapes extends Shapes<Vertices3D> implements AreaMeas
         return ver;
     }
 
-    // AB = ((xB - xA)^2 + (yB - yA)^2 + (zB - zA)^2)^(1/2)
-    public float getDistance(Vertices3D pointA, Vertices3D pointB) {
-        return (float) (Math.sqrt(Math.pow((pointA.getX() - pointB.getX()), 2) +
-                Math.pow((pointA.getY() - pointB.getY()), 2) +
-                Math.pow((pointA.getZ() - pointB.getZ()), 2)));
+    @Override
+    public String toString() {
+        return "SpaceShape{" +
+                "listOfVertices=" + listOfVertices +
+                '}';
     }
 }

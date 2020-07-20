@@ -3,12 +3,12 @@ package com.java.oop.teben.shapes.plane_shapes;
 import com.java.oop.teben.interfaces.AreaMeasurable;
 import com.java.oop.teben.interfaces.PerimeterMeasurable;
 import com.java.oop.teben.points.Vertices2D;
-import com.java.oop.teben.shapes.Shapes;
+import com.java.oop.teben.shapes.Shape;
 
 import java.util.List;
 
-public abstract class PlaneShapes extends Shapes<Vertices2D> implements PerimeterMeasurable, AreaMeasurable {
-    public PlaneShapes(List<Vertices2D> listOfVertices, String nameOfShape) {
+public abstract class PlaneShape extends Shape<Vertices2D> implements PerimeterMeasurable, AreaMeasurable {
+    public PlaneShape(List<Vertices2D> listOfVertices, String nameOfShape) {
         super(listOfVertices, nameOfShape);
     }
 
@@ -29,11 +29,10 @@ public abstract class PlaneShapes extends Shapes<Vertices2D> implements Perimete
         return ver;
     }
 
-    // AB = ((xB - xA)^2 + (yB - yA)^2)^(1/2)
-    public float getDistance(Vertices2D pointA, Vertices2D pointB) {
-        return (float) (Math.sqrt(Math.pow((pointA.getX() - pointB.getX()), 2) +
-                Math.pow((pointA.getY() - pointB.getY()), 2)));
+    @Override
+    public String toString() {
+        return "PlaneShape{" +
+                "listOfVertices=" + listOfVertices +
+                '}';
     }
-
-
 }
