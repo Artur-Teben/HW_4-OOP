@@ -4,7 +4,7 @@ import com.java.oop.teben.points.Vertices2D;
 
 import java.util.List;
 
-public class Circle extends PlaneShapes {
+public class Circle extends PlaneShape {
     private final float radiusOfCircle;
 
     public Circle(Vertices2D center, String nameOfShape, float radiusOfCircle) {

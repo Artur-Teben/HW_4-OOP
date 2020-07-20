@@ -4,7 +4,7 @@ import com.java.oop.teben.points.Vertices2D;
 
 import java.util.List;
 
-public class Rectangle extends PlaneShapes {
+public class Rectangle extends PlaneShape {
     private final float width;
     private final float height;
 
