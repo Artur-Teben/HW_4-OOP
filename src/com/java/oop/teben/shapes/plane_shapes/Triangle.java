@@ -4,16 +4,16 @@ import com.java.oop.teben.points.Vertices2D;
 
 import java.util.List;
 
-public class Triangle extends PlaneShapes {
+public class Triangle extends PlaneShape {
     private final float a;
     private final float b;
     private final float c;
 
     public Triangle(Vertices2D A, Vertices2D B, Vertices2D C, String nameOfShape) {
         super(List.of(A, B, C), nameOfShape);
-        this.a = getDistance(B, C);
-        this.b = getDistance(A, C);
-        this.c = getDistance(A, B);
+        this.a = A.getDistance(B, C);
+        this.b = B.getDistance(A, C);
+        this.c = C.getDistance(A, B);
     }
 
     // S = (1/4) * ((a + b + c) * (b + c - a) * (a + c - b) * (a + b - c)) ^ (1/2)
